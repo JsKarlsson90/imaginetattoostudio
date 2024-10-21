@@ -1,60 +1,70 @@
+Body {
+  background-color: #ffffff;
+  color: #000000;
+
+}
 .mellomrom {
   height: 100px;
   width: 100%;
 }
 /* Navigasjonsbar */
 
-nav ul {
-  background-color: #ffffff;
-  position: sticky;
-  top: 0;
-  width: 95%;
-}
-nav ul a {
-  float: left;
-  text-decoration: none;
-  font-size: 25px;
-  color: #000000;
-  display: block;
-  padding: 50px;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-family: 'Oswald';
+/* Navigasjonsmeny */
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #fffff;
   position: sticky;
 }
-
 .navbar {
-  padding-top: 20px;
-  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul a:hover {
+.navbar-item {
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: "Oswald";
+  text-decoration: none;
+  padding: 25px 25px 25px 25px;
+  font-size: 20px;
+  position: sticky;
+}
+.navbar-item:hover {
   font-weight: bold;
+  font-size: 22px;
 }
 
 /* BOOKING KNAPP */
-.BOOKING {
+.booking {
   background-color: #526064;
   color: white;
-  padding: 5px 25px;
-  padding-bottom: px;
-  text-align: center;
+  padding: 25px 35px;
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
+  text-align: center;
+  padding-top: 25px;
+  font-sixe: 20px;
+  font-family: "Oswald";
+  margin-right: 20px;
 }
 
-.BOOKING:hover {
-background-color: #000000;
-color: #ffffff;
+.booking:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.BOOKING:active{
+.booking:active {
   background-color: #f5f5f5;
   color: #000000;
 }
 
-a:active {
+.booking:active {
   color: #526064;
 }
 
@@ -77,15 +87,15 @@ a:active {
 a .btn {
   font-style: none;
 }
-.container .btn  {
+.container .btn {
   position: absolute;
-  top: 650px;
-  left: 490px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color:#526064;
+  top: 600px;
+  left: 390px;
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  background-color: #526064;
   color: #ffffff;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: none;
   font-size: 35px;
   padding: 22px 44px;
@@ -98,19 +108,127 @@ a .btn {
   background-color: black;
 }
 
-/* Bilde tekst cathrine */
-.cathrine1 {
-  display: grid;
-  align-items: center; 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 5px;
- }
- 
- .cathrine-image {
-  padding-left: 300px;
- }
- 
-.text-cathrine  {
-  padding padding-left: 50px;
-   font-size: 20px;
- }
+/* Profilseksjon */
+.profile-section {
+  display: flex; /* Setter Flexbox layout */
+  justify-content: space-between; /* Ligger plass mellom bilde og tekst */
+  align-items: center; /* Sentraliserer innhold vertikalt */
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Bildecontainer */
+.image-container {
+  max-width: 500px; /* Sett ønsket størrelse for bildet */
+}
+
+.image-container img {
+  width: 100%; /* Tilpasser bildet til container */
+  display: block;
+}
+
+/* Profilbeskrivelse */
+.profile-description {
+  max-width: 600px; /* Sett en maksimal bredde for tekstinnholdet */
+  margin-left: 20px; /* Liten avstand mellom bildet og teksten */
+}
+
+.profile-description p {
+  font-size: 16px;
+  font-family: "manrope";
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* GALLERI */
+.titel-kollage {
+  padding-top: 0px;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 70px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+.galleri {
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0px 0;
+  background-color: #000000;
+}
+
+.galleri .kollage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-family: "Oswald";
+  font-size: 60px;
+  text-align: center;
+}
+.informasjon1 {
+  font-family: "Manrope";
+  font-size: 20px;
+  text-align: center;
+}
+* Generell reset for margin og padding */ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Seksjonscontainer */
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 50px 0;
+}
+
+/* Individuell kolonne */
+.feature-item {
+  text-align: center;
+  max-width: 250px;
+  padding: 20px;
+}
+
+/* Ikonstyling */
+.feature-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/* Overskrift */
+.feature-title {
+  background-color: #526064;
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+}
+
+/* Tekststyling */
+.feature-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: "manrope";
+}
