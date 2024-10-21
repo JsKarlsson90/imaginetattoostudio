@@ -1,0 +1,116 @@
+.mellomrom {
+  height: 100px;
+  width: 100%;
+}
+/* Navigasjonsbar */
+
+nav ul {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  width: 95%;
+}
+nav ul a {
+  float: left;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  padding: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'Oswald';
+  position: sticky;
+}
+
+.navbar {
+  padding-top: 20px;
+  position: sticky;
+}
+
+nav ul a:hover {
+  font-weight: bold;
+}
+
+/* BOOKING KNAPP */
+.BOOKING {
+  background-color: #526064;
+  color: white;
+  padding: 5px 25px;
+  padding-bottom: px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.BOOKING:hover {
+background-color: #000000;
+color: #ffffff;
+}
+
+.BOOKING:active{
+  background-color: #f5f5f5;
+  color: #000000;
+}
+
+a:active {
+  color: #526064;
+}
+
+/* ABOVE THE FOLD */
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+
+a .btn {
+  font-style: none;
+}
+.container .btn  {
+  position: absolute;
+  top: 650px;
+  left: 490px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:#526064;
+  color: #ffffff;
+  font-family: 'Oswald';
+  font-style: none;
+  font-size: 35px;
+  padding: 22px 44px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+/* Bilde tekst cathrine */
+.cathrine1 {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+ }
+ 
+ .cathrine-image {
+  padding-left: 300px;
+ }
+ 
+.text-cathrine  {
+  padding padding-left: 50px;
+   font-size: 20px;
+ }
